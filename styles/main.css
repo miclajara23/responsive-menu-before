@@ -13,6 +13,8 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
+  letter-spacing: 3px;
 }
 
 img {
@@ -54,6 +56,7 @@ nav a {
   display: block;
   padding: 1rem;
   font-size: 1.4rem;
+  border-bottom: 1px dotted #ccc;
 }
 
 nav a:hover {
