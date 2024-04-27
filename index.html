@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
     <meta name="description" content="A website all about possums">
     <title>Home - Possum Palooza</title>
@@ -20,14 +23,14 @@
 
 <body>
     <header>
-        <div class="menu-icon">
+        <div class="menu-icon" data-aos="zoom-in" data-aos-duration="2500">
             <svg viewbox="0 0 60 60">
                 <line x1="5%" y1="50%" x2="95%" y2="50%" />
                 <line x1="5%" y1="50%" x2="95%" y2="50%" />
             </svg>
         </div>
         <nav>
-            <ul>
+            <ul data-aos="fade-down" data-aos-duration="1500">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="about/index.html">About</a></li>
                 <li><a href="contact/index.html">Contact</a></li>
@@ -35,10 +38,9 @@
         </nav>
     </header>
     <div class="hero">
-        <img src="https://images.unsplash.com/photo-1698251720472-ac0bad5c3cbc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="yellow mercedes-benz">
+        <img src="images/bb.jpg" alt="yellow mercedes-benz" data-aos="fade-right" data-aos-duration="2500">
         <div class="overlay">
-            <h1>Amazing Mercedes-benz Car</h1>
+            <h1 data-aos="fade-up" data-aos-duration="3000">Amazing Mercedes-Benz Car</h1>
         </div>
     </div>
     <main>
@@ -75,13 +77,20 @@
         <p>Michael Dream Car &copy; 2024 All right reserved</p>
     </footer>
 
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         const header = document.querySelector("header");
 
         document.querySelector(".menu-icon").addEventListener("click", () => {
             header.classList.toggle("close");
         });
     </script>
+
+
 </body>
 
 
