@@ -23,8 +23,10 @@ img {
 }
 
 h1 {
-  color: #ccc;
-  box-shadow: inset 3px 3px 5px #888;
+  color: #711f21;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
 }
 h2 {
   color: #711f21;
@@ -152,12 +154,16 @@ nav a:not([href]) {
   color: #fff;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   margin: 0 1rem 1rem;
+  box-shadow: inset 3px 3px 5px #888;
 }
 
 main {
   padding: 0 1rem;
   max-width: 50rem;
   align-self: center;
+}
+.main h1 {
+  color: #fff;
 }
 
 @media (min-width: 600px) {
